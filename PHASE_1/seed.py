@@ -1,3 +1,7 @@
+# ========================
+# Random Data Entry Script
+# ========================
+
 import random
 from datetime import date, timedelta
 from faker import Faker
