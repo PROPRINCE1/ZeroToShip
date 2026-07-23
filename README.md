@@ -7,9 +7,8 @@ A student collaboration platform that connects university students with projects
 ### 📁 Output
 Screenshots of the database setup and successful execution.
 ### 📁 DB
-- `schema.sql` – Database schema
+- `db.pgsql` – Database code
 - `connection.py` – Database connection
-- `.env.example` – Environment variables template
 ### 📁 UNIcolab
 ER Diagram (`.drawio`) showing entities and relationships.
 ### 📁 seed.py
