@@ -4,66 +4,109 @@ A student collaboration platform that connects university students with projects
 
 ---
 
-# Phase 1 – Database Design
+## Repository Structure
 
-## Deliverables
-
-### 📁 Output
-Screenshots of the database setup and successful execution.
-
-### 📁 DB
-- `db.pgsql` – Database schema
-- `connection.py` – Database connection
-
-### 🧩 UNIcolab
-ER Diagram (`.drawio`) showing entities and relationships.
-
-### 🐍 seed.py
-Python script to populate the database with random sample data.
-
----
-
-# Phase 2 – Backend Authentication & Security
-
-## Deliverables
-
-### 📁 Output
-Screenshots demonstrating:
-- Server running
-- User registration
-- User login
-- Unauthorized project edit (403)
-- Authorized project edit (200)
-
-### ⚙️ Backend
-- `app.py` – Flask application entry point
-- `config.py` – Environment configuration
-- `database.py` – PostgreSQL connection
-- `requirements.txt` – Project dependencies
-
-### 📂 Routes
-- `auth.py`
-  - `/register`
-  - `/login`
-- `projects.py`
-  - Protected project routes
-
-### 🔒 Middleware
-- `auth.py` – JWT authentication middleware
-- `authorization.py` – Project ownership verification
-
-### 🛠 Utilities
-- `hashing.py` – bcrypt password hashing
-- `jwt_handler.py` – JWT generation and verification
+```
+ZeroToShip/
+│
+├── PHASE_1/
+│   ├── Output/
+│   ├── DB/
+│   ├── UNIcolab.drawio
+│   └── seed.py
+│
+├── PHASE_2/
+│   ├── Output/
+│   ├── middleware/
+│   ├── routes/
+│   └── util/
+│
+├── PHASE_3/
+│   ├── Output/
+│   ├── routes/
+│   └── ...
+│
+└── Uni_Collab/
+    ├── db/
+    ├── middleware/
+    ├── routes/
+    ├── util/
+    ├── app.py
+    └── config.py
+```
 
 ---
 
-## Tech Stack
+## Phase 1 – Database Design
 
-- PostgreSQL (Supabase)
-- Python
-- Flask
-- bcrypt
-- JWT (PyJWT)
-- psycopg
-- Draw.io
+### Deliverables
+
+* 📁 **Output** – Database screenshots
+* 📁 **DB** – PostgreSQL schema and connection script
+* 🧩 **UNIcolab.drawio** – ER diagram
+* 🐍 **seed.py** – Random data generation
+
+### Tech Stack
+
+* PostgreSQL (Supabase)
+* Python
+* psycopg2
+* Draw.io
+
+---
+
+## Phase 2 – Authentication & Authorization
+
+### Features
+
+* User Registration
+* User Login
+* JWT Authentication
+* Password Hashing
+* Protected Routes
+* Project Ownership Authorization
+
+---
+
+## Phase 3 – Project Management API
+
+### Features
+
+* Project CRUD Operations
+* Skill-Based Project Search
+* Project Applications
+* Duplicate Application Prevention
+* Protected CRUD Endpoints
+
+---
+
+## Integrated Application
+
+The **`Uni_Collab`** folder contains the fully integrated backend, combining the functionality from all completed phases into a single application.
+
+### Integrated Features
+
+* User Authentication & Authorization
+* Database Integration (Supabase PostgreSQL)
+* Project Management API
+* Skill-Based Project Filtering
+* Project Application System
+* JWT-Protected Routes
+
+---
+
+## Technologies Used
+
+* Python
+* Flask
+* PostgreSQL (Supabase)
+* psycopg2
+* JWT
+* bcrypt
+* Draw.io
+
+---
+
+## Authors
+
+Developed as part of the **ZeroToShip** university project.
