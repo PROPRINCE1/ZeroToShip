@@ -9,12 +9,6 @@ application_bp = Blueprint(
     url_prefix="/api"
 )
 
-
-# =====================================================
-# APPLY TO PROJECT
-# POST /api/apply
-# =====================================================
-
 @application_bp.route("/apply", methods=["POST"])
 @login_required
 def apply_to_project():
@@ -34,7 +28,6 @@ def apply_to_project():
 
     try:
 
-        # Check whether project exists
         cur.execute("""
             SELECT creator_id
             FROM projects
@@ -51,14 +44,12 @@ def apply_to_project():
 
         creator_id = project[0]
 
-        # Prevent creator from applying to own project
         if creator_id == g.user_id:
 
             return jsonify({
                 "message": "You cannot apply to your own project."
             }), 403
 
-        # Insert application
         cur.execute("""
             INSERT INTO applications
             (
@@ -87,7 +78,6 @@ def apply_to_project():
 
         conn.rollback()
 
-        # Duplicate application
         if "unique_application" in str(e):
 
             return jsonify({

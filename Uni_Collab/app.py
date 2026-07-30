@@ -1,4 +1,5 @@
 from flask import Flask
+
 from routes.auth import auth_bp
 from routes.projects import project_bp
 from routes.applications import application_bp
