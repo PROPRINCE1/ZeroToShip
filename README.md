@@ -1,10 +1,12 @@
 # ZeroToShip
 
-A student collaboration platform that connects university students with projects based on their skills and interests.
+A student collaboration platform that connects university students with projects based on their skills, interests, and collaboration goals.
+
+ZeroToShip allows students to discover projects, create their own ideas, find teammates, and collaborate through a centralized university project marketplace.
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```
 ZeroToShip/
@@ -19,85 +21,165 @@ ZeroToShip/
 │   ├── Output/
 │   ├── middleware/
 │   ├── routes/
-│   └── util/
-│   └── app.py
+│   ├── util/
+│   ├── app.py
 │   └── config.py
 │
 ├── PHASE_3/
 │   ├── Output/
 │   ├── routes/
-│   └── app.py
+│   ├── app.py
+│   └── API documentation
 │
-└── Uni_Collab/
-    ├── db/
-    ├── middleware/
-    ├── routes/
-    ├── util/
-    ├── app.py
-    └── config.py
+├── PHASE_4/
+│   └── Uni_Collab/
+│       ├── frontend/
+│       │   ├── src/
+│       │   ├── components/
+│       │   ├── pages/
+│       │   ├── context/
+│       │   └── data/
+│       │
+│       └── backend/
+│           ├── routes/
+│           ├── middleware/
+│           ├── util/
+│           ├── app.py
+│           └── config.py
+│
+└── README.md
 ```
 
 ---
 
-## Phase 1 – Database Design
+# Phase 1 – Database Design
 
-### Deliverables
+## Deliverables
 
 * 📁 **Output** – Database screenshots
-* 📁 **DB** – PostgreSQL schema and connection script
-* 🧩 **UNIcolab.drawio** – ER diagram
-* 🐍 **seed.py** – Random data generation
+* 📁 **DB** – PostgreSQL schema and connection scripts
+* 🧩 **UNIcolab.drawio** – Entity Relationship Diagram
+* 🐍 **seed.py** – Database test data generation
 
-### Tech Stack
+## Tech Stack
 
 * PostgreSQL (Supabase)
 * Python
 * psycopg2
 * Draw.io
 
+## Database Features
+
+* User management
+* Skills system
+* User skill tracking
+* Project management
+* Required project skills
+* Application management
+
 ---
 
-## Phase 2 – Authentication & Authorization
+# Phase 2 – Authentication & Authorization
 
-### Features
+## Features
 
 * User Registration
 * User Login
 * JWT Authentication
-* Password Hashing
-* Protected Routes
-* Project Ownership Authorization
+* Password Hashing using bcrypt
+* Protected API Routes
+* Authorization Middleware
+* Project Ownership Validation
 
 ---
 
-## Phase 3 – Project Management API
+# Phase 3 – Project Management API
 
-### Features
+## Features
 
 * Project CRUD Operations
-* Skill-Based Project Search
-* Project Applications
-* Duplicate Application Prevention
-* Protected CRUD Endpoints
-
----
-
-## Integrated Application
-
-The **`Uni_Collab`** folder contains the fully integrated backend, combining the functionality from all completed phases into a single application.
-
-### Integrated Features
-
-* User Authentication & Authorization
-* Database Integration (Supabase PostgreSQL)
-* Project Management API
+* Create, Read, Update, Delete Projects
 * Skill-Based Project Filtering
 * Project Application System
-* JWT-Protected Routes
+* Duplicate Application Prevention
+* Protected CRUD Endpoints
+* Application Status Management
 
 ---
 
-## Technologies Used
+# Phase 4 – Frontend Application
+
+## Features
+
+### Project Marketplace
+
+* Browse available university projects
+* Search and filter projects by skills
+* Responsive project cards
+* Project status indicators
+
+### Project Creation
+
+* Create new projects
+* Add required skills
+* Define project difficulty
+* Set deadlines
+* Add required team positions
+* Live project preview
+
+### Project Details
+
+* Detailed project overview
+* Required roles
+* Technologies section
+* Team information
+* Application system
+
+### User Portal
+
+* User statistics
+* Project overview
+* Achievements section
+* Activity tracking
+
+### Settings
+
+* Account settings
+* Notification preferences
+* Appearance settings
+* Project management
+* Account controls
+
+### Responsive Design
+
+* Desktop layout
+* Tablet support
+* Mobile navigation
+* Mobile-friendly components
+
+---
+
+# Integrated Application
+
+The **Uni_Collab** application combines all completed phases into one platform.
+
+## Integrated Features
+
+* User Authentication & Authorization
+* PostgreSQL Database Integration
+* JWT Protected APIs
+* Project Marketplace
+* Project Creation System
+* Skill-Based Discovery
+* Application Workflow
+* Responsive Frontend Interface
+* User Dashboard/Portal
+
+---
+
+# Technologies Used
+
+## Backend
 
 * Python
 * Flask
@@ -105,10 +187,34 @@ The **`Uni_Collab`** folder contains the fully integrated backend, combining the
 * psycopg2
 * JWT
 * bcrypt
+
+## Frontend
+
+* React
+* Vite
+* Tailwind CSS
+* React Router
+* Lucide React Icons
+
+## Tools
+
+* Git & GitHub
 * Draw.io
+* VS Code
 
 ---
 
-## Authors
+# Future Improvements
 
-Developed as part of the **ZeroToShip** university project.
+* Real-time project collaboration
+* Direct messaging between students
+* Backend-connected frontend authentication
+* Automated skill recommendation system
+* Project progress tracking
+* User profiles and portfolios
+
+---
+
+# Authors
+
+Developed as part of the **ZeroToShip university project**.
