@@ -20,11 +20,13 @@ ZeroToShip/
 │   ├── middleware/
 │   ├── routes/
 │   └── util/
+│   └── app.py
+│   └── config.py
 │
 ├── PHASE_3/
 │   ├── Output/
 │   ├── routes/
-│   └── ...
+│   └── app.py
 │
 └── Uni_Collab/
     ├── db/
