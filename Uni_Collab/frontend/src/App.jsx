@@ -18,9 +18,7 @@ function App() {
     return (
         <ProjectProvider>
             <BrowserRouter>
-
                 <Background />
-
                 <SideDock disabled={showNotifications} />
                 <MobileNav />
 
